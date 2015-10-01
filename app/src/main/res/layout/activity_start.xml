@@ -45,7 +45,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hobbies"
+        android:text="Me"
         android:id="@+id/meButton"
         android:layout_above="@+id/booksButton"
         android:layout_alignParentRight="true"
@@ -91,11 +91,11 @@
         android:id="@+id/gameImage"
         android:background="@drawable/games"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/bookView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/booksButton"
-        android:layout_alignEnd="@+id/booksButton"
+        android:layout_alignRight="@+id/meButton"
+        android:layout_alignEnd="@+id/meButton"
+        android:layout_above="@+id/gameView"
         android:visibility="gone" />
 
     <ImageView
@@ -105,9 +105,10 @@
         android:background="@drawable/favoritefood"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/familyButton"
-        android:layout_alignEnd="@+id/familyButton"
         android:layout_alignParentTop="true"
+        android:layout_above="@+id/foodView"
+        android:layout_toLeftOf="@+id/videoGamesButton"
+        android:layout_toStartOf="@+id/videoGamesButton"
         android:visibility="gone" />
 
     <ImageView
@@ -115,11 +116,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/food2Image"
         android:background="@drawable/favoritefood2"
-        android:visibility="gone"
         android:layout_alignRight="@+id/meButton"
         android:layout_alignEnd="@+id/meButton"
-        android:layout_toRightOf="@+id/videoGamesButton"
-        android:layout_toEndOf="@+id/videoGamesButton" />
+        android:layout_toEndOf="@+id/videoGamesButton"
+        android:layout_above="@+id/foodView"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -129,7 +131,9 @@
         android:background="@drawable/family"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/bookView"
+        android:layout_alignRight="@+id/meButton"
+        android:layout_alignEnd="@+id/meButton"
+        android:layout_above="@+id/familyView"
         android:visibility="gone" />
 
     <TextView
