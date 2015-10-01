@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hobbies"
-        android:id="@+id/hobbyButton"
+        android:id="@+id/meButton"
         android:layout_above="@+id/booksButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -55,110 +55,144 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/meImage"
-        android:background="@drawable/Me"
+        android:background="@drawable/me"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/booksButton"
         android:layout_toRightOf="@+id/familyButton"
-        android:layout_toEndOf="@+id/familyButton" />
+        android:layout_toEndOf="@+id/familyButton"
+        android:visibility="gone" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/book1Image"
-        android:background="@drawable/Books"
+        android:background="@drawable/books"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/hobbyButton"
-        android:layout_alignEnd="@+id/hobbyButton"
-        android:layout_toEndOf="@+id/book2Image"
+        android:layout_alignRight="@+id/familyView"
+        android:layout_alignEnd="@+id/familyView"
+        android:layout_alignBottom="@+id/book2Image"
         android:layout_toRightOf="@+id/book2Image"
-        android:layout_alignBottom="@+id/book2Image" />
+        android:layout_toEndOf="@+id/book2Image"
+        android:visibility="gone" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/book2Image"
-        android:background="@drawable/FavoriteBook"
-        android:layout_below="@+id/imageView5"
+        android:background="@drawable/favoritebook"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView4"
-        android:layout_below="@+id/meImage"
+        android:id="@+id/gameImage"
+        android:background="@drawable/games"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bookView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/booksButton"
+        android:layout_alignEnd="@+id/booksButton"
+        android:visibility="gone" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView5"
-        android:layout_alignTop="@+id/meImage"
-        android:layout_toRightOf="@+id/meImage"
-        android:layout_toEndOf="@+id/meImage" />
+        android:id="@+id/food1Image"
+        android:background="@drawable/favoritefood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/familyButton"
+        android:layout_alignEnd="@+id/familyButton"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView6"
-        android:layout_below="@+id/meImage"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/food2Image"
+        android:background="@drawable/favoritefood2"
+        android:visibility="gone"
+        android:layout_alignRight="@+id/meButton"
+        android:layout_alignEnd="@+id/meButton"
+        android:layout_toRightOf="@+id/videoGamesButton"
+        android:layout_toEndOf="@+id/videoGamesButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/familyImage"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/family"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bookView"
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="@string/book_text"
         android:id="@+id/bookView"
         android:layout_below="@+id/book1Image"
-        android:layout_toRightOf="@+id/imageView4"
         android:layout_above="@+id/foodButton"
-        android:layout_alignRight="@+id/book1Image"
-        android:layout_alignEnd="@+id/book1Image" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/meButton"
+        android:layout_alignEnd="@+id/meButton"
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="@string/food_text"
         android:id="@+id/foodView"
         android:layout_above="@+id/foodButton"
-        android:layout_alignRight="@+id/hobbyButton"
-        android:layout_alignEnd="@+id/hobbyButton"
-        android:layout_below="@+id/book1Image"
+        android:layout_alignTop="@+id/bookView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/familyView"
-        android:layout_below="@+id/book1Image"
-        android:layout_toRightOf="@+id/imageView4"
-        android:layout_above="@+id/foodButton"
-        android:layout_alignRight="@+id/hobbyButton"
-        android:layout_alignEnd="@+id/hobbyButton" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I love playing video games. It&apos;s what I do in my spare time. Right now I am really into hearthstone."
-        android:id="@+id/gameView"
-        android:layout_below="@+id/book1Image"
-        android:layout_toRightOf="@+id/imageView4"
-        android:layout_above="@+id/foodButton"
+        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:layout_below="@+id/book1Image"
-        android:layout_toRightOf="@+id/imageView4"
+        android:id="@+id/familyView"
+        android:layout_above="@+id/foodButton"
+        android:text="@string/family_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/bookView"
+        android:layout_alignEnd="@+id/bookView"
+        android:layout_alignTop="@+id/bookView"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameView"
         android:layout_above="@+id/foodButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/meView" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/bookView"
+        android:text="@string/game_text"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/me_text"
+        android:id="@+id/meView"
+        android:layout_alignRight="@+id/booksButton"
+        android:layout_alignEnd="@+id/booksButton"
+        android:layout_above="@+id/foodButton"
+        android:layout_alignTop="@+id/bookView"
+        android:visibility="gone" />
 
 </RelativeLayout>

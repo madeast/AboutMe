@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name = "family_text">I am the oldest of 5 siblings. Three of my siblings are adopted.</string>
+    <string name = "food_text">Some of my favorite places to eat include chilis, and virgs. I love getting chicken and basically anything made from potatoes.</string>
+    <string name = "me_text">My name is Easton Madsen. I am 17 years old. I love to play civilization 5, and hearthstone.</string>
+    <string name = "game_text">I love playing video games. Its what I do in my spare time. Right now I am really into hearthstone.</string>
+    <string name = "book_text">I love the books by Brandon Sanderson, especially the Mistborn series. I also love Percy Jackson books by Rick Riordan. As you can see I am into fantasy books.</string>
 </resources>
